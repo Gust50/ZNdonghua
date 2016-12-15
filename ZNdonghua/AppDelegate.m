@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainTabBar.h"
+#import "LeftViewController.h"
+#import <MMDrawerController.h>
 @interface AppDelegate ()
 
 @end
@@ -18,9 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     MainTabBar *mainTarBar = [[MainTabBar alloc] init];
-    self.window.rootViewController = mainTarBar;
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:mainTarBar leftDrawerViewController:leftVC];
+    self.window.rootViewController = drawerController;
     [self.window makeKeyAndVisible];
-
+    drawerController.maximumLeftDrawerWidth = 260;
+    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
     return YES;
 }

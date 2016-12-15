@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		904576931CCB6823079564DE /* libPods-ZNdonghua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B53F8F3CF1F71CCC8D414BD3 /* libPods-ZNdonghua.a */; };
+		CD0713CF1E0226110008985A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713CE1E0226110008985A /* LeftViewController.m */; };
+		CD0713D21E0239340008985A /* leftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713D11E0239340008985A /* leftTableViewCell.m */; };
+		CD0713D51E023C840008985A /* leftHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713D41E023C840008985A /* leftHeaderView.m */; };
+		CD0713D81E0245C10008985A /* ClearDishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713D71E0245C10008985A /* ClearDishViewController.m */; };
+		CD0713DB1E0245E30008985A /* NightModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713DA1E0245E30008985A /* NightModeViewController.m */; };
+		CD0713DE1E0245F10008985A /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713DD1E0245F10008985A /* UpdateViewController.m */; };
+		CD0713E11E0246000008985A /* AboutBBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713E01E0246000008985A /* AboutBBViewController.m */; };
+		CD0713E41E0246250008985A /* JoinUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713E31E0246250008985A /* JoinUsViewController.m */; };
+		CD0713E71E0246300008985A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713E61E0246300008985A /* LoginViewController.m */; };
+		CD0713EA1E028D770008985A /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713E91E028D770008985A /* ForgetPasswordViewController.m */; };
+		CD0713ED1E028D840008985A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713EC1E028D840008985A /* RegisterViewController.m */; };
+		CD0713F01E0293060008985A /* BaseUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713EF1E0293060008985A /* BaseUserViewController.m */; };
 		CD8B83C71E0133E800716930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B83C61E0133E800716930 /* main.m */; };
 		CD8B83CA1E0133E800716930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B83C91E0133E800716930 /* AppDelegate.m */; };
 		CD8B83CD1E0133E800716930 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B83CC1E0133E800716930 /* ViewController.m */; };
@@ -54,6 +66,30 @@
 /* Begin PBXFileReference section */
 		141335D04B52E36021467F61 /* Pods-ZNdonghua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNdonghua.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZNdonghua/Pods-ZNdonghua.release.xcconfig"; sourceTree = "<group>"; };
 		B53F8F3CF1F71CCC8D414BD3 /* libPods-ZNdonghua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZNdonghua.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0713CD1E0226110008985A /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		CD0713CE1E0226110008985A /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		CD0713D01E0239340008985A /* leftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftTableViewCell.h; sourceTree = "<group>"; };
+		CD0713D11E0239340008985A /* leftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftTableViewCell.m; sourceTree = "<group>"; };
+		CD0713D31E023C840008985A /* leftHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leftHeaderView.h; sourceTree = "<group>"; };
+		CD0713D41E023C840008985A /* leftHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = leftHeaderView.m; sourceTree = "<group>"; };
+		CD0713D61E0245C10008985A /* ClearDishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearDishViewController.h; sourceTree = "<group>"; };
+		CD0713D71E0245C10008985A /* ClearDishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearDishViewController.m; sourceTree = "<group>"; };
+		CD0713D91E0245E30008985A /* NightModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NightModeViewController.h; sourceTree = "<group>"; };
+		CD0713DA1E0245E30008985A /* NightModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NightModeViewController.m; sourceTree = "<group>"; };
+		CD0713DC1E0245F10008985A /* UpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateViewController.h; sourceTree = "<group>"; };
+		CD0713DD1E0245F10008985A /* UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateViewController.m; sourceTree = "<group>"; };
+		CD0713DF1E0246000008985A /* AboutBBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutBBViewController.h; sourceTree = "<group>"; };
+		CD0713E01E0246000008985A /* AboutBBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutBBViewController.m; sourceTree = "<group>"; };
+		CD0713E21E0246250008985A /* JoinUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinUsViewController.h; sourceTree = "<group>"; };
+		CD0713E31E0246250008985A /* JoinUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinUsViewController.m; sourceTree = "<group>"; };
+		CD0713E51E0246300008985A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CD0713E61E0246300008985A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CD0713E81E028D770008985A /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		CD0713E91E028D770008985A /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		CD0713EB1E028D840008985A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		CD0713EC1E028D840008985A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		CD0713EE1E0293060008985A /* BaseUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUserViewController.h; sourceTree = "<group>"; };
+		CD0713EF1E0293060008985A /* BaseUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUserViewController.m; sourceTree = "<group>"; };
 		CD8B83C21E0133E800716930 /* ZNdonghua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZNdonghua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B83C61E0133E800716930 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD8B83C81E0133E800716930 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -253,6 +289,8 @@
 				CD8B843B1E01466000716930 /* BaseViewController.m */,
 				CD8B843C1E01466000716930 /* SearchBaseController.h */,
 				CD8B843D1E01466000716930 /* SearchBaseController.m */,
+				CD0713EE1E0293060008985A /* BaseUserViewController.h */,
+				CD0713EF1E0293060008985A /* BaseUserViewController.m */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -311,6 +349,8 @@
 				CD8B84331E013BBB00716930 /* DegeneratorViewController.m */,
 				CD8B84351E013BE800716930 /* RadioViewController.h */,
 				CD8B84361E013BE800716930 /* RadioViewController.m */,
+				CD0713CD1E0226110008985A /* LeftViewController.h */,
+				CD0713CE1E0226110008985A /* LeftViewController.m */,
 			);
 			name = "first floor controller";
 			sourceTree = "<group>";
@@ -318,6 +358,18 @@
 		CD8B84011E01369200716930 /* second floor controller */ = {
 			isa = PBXGroup;
 			children = (
+				CD0713D61E0245C10008985A /* ClearDishViewController.h */,
+				CD0713D71E0245C10008985A /* ClearDishViewController.m */,
+				CD0713D91E0245E30008985A /* NightModeViewController.h */,
+				CD0713DA1E0245E30008985A /* NightModeViewController.m */,
+				CD0713DC1E0245F10008985A /* UpdateViewController.h */,
+				CD0713DD1E0245F10008985A /* UpdateViewController.m */,
+				CD0713DF1E0246000008985A /* AboutBBViewController.h */,
+				CD0713E01E0246000008985A /* AboutBBViewController.m */,
+				CD0713E21E0246250008985A /* JoinUsViewController.h */,
+				CD0713E31E0246250008985A /* JoinUsViewController.m */,
+				CD0713E51E0246300008985A /* LoginViewController.h */,
+				CD0713E61E0246300008985A /* LoginViewController.m */,
 			);
 			name = "second floor controller";
 			sourceTree = "<group>";
@@ -325,6 +377,10 @@
 		CD8B84021E01369D00716930 /* third floor controller */ = {
 			isa = PBXGroup;
 			children = (
+				CD0713E81E028D770008985A /* ForgetPasswordViewController.h */,
+				CD0713E91E028D770008985A /* ForgetPasswordViewController.m */,
+				CD0713EB1E028D840008985A /* RegisterViewController.h */,
+				CD0713EC1E028D840008985A /* RegisterViewController.m */,
 			);
 			name = "third floor controller";
 			sourceTree = "<group>";
@@ -346,6 +402,10 @@
 		CD8B84051E0136FF00716930 /* first floor view */ = {
 			isa = PBXGroup;
 			children = (
+				CD0713D11E0239340008985A /* leftTableViewCell.m */,
+				CD0713D01E0239340008985A /* leftTableViewCell.h */,
+				CD0713D31E023C840008985A /* leftHeaderView.h */,
+				CD0713D41E023C840008985A /* leftHeaderView.m */,
 			);
 			name = "first floor view";
 			sourceTree = "<group>";
@@ -582,23 +642,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD8B83CD1E0133E800716930 /* ViewController.m in Sources */,
+				CD0713CF1E0226110008985A /* LeftViewController.m in Sources */,
 				CD8B84411E01466000716930 /* BaseViewController.m in Sources */,
+				CD0713EA1E028D770008985A /* ForgetPasswordViewController.m in Sources */,
 				CD8B84251E01394D00716930 /* UILabel+LabelStyle.m in Sources */,
+				CD0713E71E0246300008985A /* LoginViewController.m in Sources */,
+				CD0713D51E023C840008985A /* leftHeaderView.m in Sources */,
 				CD8B84221E01394D00716930 /* UIButton+EnlargeTouchArea.m in Sources */,
 				CD8B84371E013BE800716930 /* RadioViewController.m in Sources */,
 				CD8B83CA1E0133E800716930 /* AppDelegate.m in Sources */,
 				CD8B84261E01394D00716930 /* UIView+frameExpand.m in Sources */,
 				CD8B84341E013BBB00716930 /* DegeneratorViewController.m in Sources */,
+				CD0713D81E0245C10008985A /* ClearDishViewController.m in Sources */,
 				CD8B84421E01466000716930 /* SearchBaseController.m in Sources */,
 				CD8B843A1E013D7700716930 /* NavigationVC.m in Sources */,
 				CD8B840C1E01385900716930 /* NetworkSingleton.m in Sources */,
+				CD0713D21E0239340008985A /* leftTableViewCell.m in Sources */,
 				CD8B84231E01394D00716930 /* UIImage+ColorImage.m in Sources */,
 				CD8B84241E01394D00716930 /* UIImage+CornerRadius.m in Sources */,
+				CD0713DE1E0245F10008985A /* UpdateViewController.m in Sources */,
 				CD8B842B1E013AEC00716930 /* MainTabBar.m in Sources */,
+				CD0713E41E0246250008985A /* JoinUsViewController.m in Sources */,
+				CD0713DB1E0245E30008985A /* NightModeViewController.m in Sources */,
+				CD0713E11E0246000008985A /* AboutBBViewController.m in Sources */,
 				CD8B84271E01394D00716930 /* UIView+ViewController.m in Sources */,
+				CD0713ED1E028D840008985A /* RegisterViewController.m in Sources */,
 				CD8B842E1E013B3900716930 /* MainViewController.m in Sources */,
 				CD8B83C71E0133E800716930 /* main.m in Sources */,
 				CD8B84211E01394D00716930 /* UIButton+Count.m in Sources */,
+				CD0713F01E0293060008985A /* BaseUserViewController.m in Sources */,
 				CD8B84311E013B7200716930 /* TimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

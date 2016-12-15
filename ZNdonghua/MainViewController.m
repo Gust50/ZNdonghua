@@ -7,7 +7,10 @@
 //
 
 #import "MainViewController.h"
-#import "Header.pch"
+#import <UIViewController+MMDrawerController.h>
+#import <MMDrawerBarButtonItem.h>
+#import "LeftViewController.h"
+#import "AppDelegate.h"
 @interface MainViewController ()
 
 @end
@@ -15,9 +18,10 @@
 @implementation MainViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     self.title = @"首页";
-    
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+
 }
 
 @end

@@ -6,5 +6,6 @@ pod 'MJRefresh'
 pod 'MJExtension'
 pod 'Masonry','~>0.6.4'
 pod 'FMDB','~>2.6'
+pod ‘MMDrawerController’
 end
 

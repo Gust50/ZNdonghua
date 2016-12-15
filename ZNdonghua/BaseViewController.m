@@ -7,9 +7,12 @@
 //
 
 #import "BaseViewController.h"
-
+#import <UIViewController+MMDrawerController.h>
+#import <MMDrawerBarButtonItem.h>
+#import "LeftViewController.h"
 @interface BaseViewController ()
 @property(nonatomic,strong)UIViewController *rightController;
+
 @end
 
 @implementation BaseViewController
@@ -17,8 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back-1"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnAC)];
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back-1"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBtnAC) ];
+    //[self setupLeftMenuButton];
+}
+- (void)setupLeftMenuButton{
+//    MMDrawerBarButtonItem *leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"picholder2"] style:UIBarButtonItemStylePlain target:self action:@selector(leftDrawerButtonAC)];
+    MMDrawerBarButtonItem *leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonAC)];
+    [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
+}
+- (void)leftDrawerButtonAC{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
 - (void)leftBtnAC{
