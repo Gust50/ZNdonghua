@@ -23,4 +23,5 @@
 #import <AFNetworking.h>
 #import <MBProgressHUD.h>
 #import <MJExtension.h>
+#import <UIImageView+WebCache.h>
 #endif /* Header_h */

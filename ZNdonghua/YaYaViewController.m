@@ -10,15 +10,17 @@
 #import "DSCarouselView.h"
 #import "MainModel.h"
 
-@interface YaYaViewController ()
+@interface YaYaViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)DSCarouselView *dscarouseView;
 @property(nonatomic,strong)MainModel *mainModel;
 @property(nonatomic,strong)YaYaListModel *yayaModel;
 @property(nonatomic,strong)NSMutableArray *dataSource;
 @property(nonatomic,strong)UIButton *yayaClassify;
 @property(nonatomic,strong)UIButton *yayaNewSchedule;
+@property(nonatomic,strong)UICollectionView *collectionView;
+@property(nonatomic,strong)NSMutableArray *urlArray;
 @end
-
+static NSString *const cellID = @"cellID";
 @implementation YaYaViewController
 
 - (MainModel *)mainModel{
@@ -70,10 +72,29 @@
     }
     
 }
+- (UICollectionView *)collectionView{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.showsVerticalScrollIndicator = NO;
+    }
+    return _collectionView;
+}
+- (NSMutableArray *)urlArray{
+    if (!_urlArray) {
+        _urlArray = [NSMutableArray array];
+    }
+    return _urlArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self loadData];
+    [self loadYaYaData];
     [self initUI];
 }
 - (void)loadData{
@@ -92,21 +113,32 @@
         
     }];
 }
+- (void)loadYaYaData{
+    [[NetworkSingleton sharedManager] getDataResult:nil url:FP_TimeListURL successBlock:^(id responseBody) {
+        NSLog(@"番组分类数据%@",responseBody);
+    } failureBlock:^(NSString *error) {
+        
+    }];
+    
+    
+}
 - (void)initUI{
     [self.view addSubview:self.yayaClassify];
     [self.view addSubview:self.yayaNewSchedule];
+    [self.view addSubview:self.collectionView];
     [self updateViewConstraints];
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellID];
 }
 - (void)updateViewConstraints{
     [super updateViewConstraints];
     WS(weakSelf);
     [_dscarouseView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.equalTo(weakSelf.view);
-        make.height.equalTo(@200);
+        make.height.equalTo(@160);
     }];
     [_yayaClassify mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@8);
-        make.top.equalTo(@205);
+        make.top.equalTo(@165);
         make.width.equalTo(@(weakSelf.view.width/2 - 10));
         make.height.equalTo(@50);
     }];
@@ -116,5 +148,49 @@
         make.top.equalTo(_yayaClassify);
         make.height.equalTo(_yayaClassify);
     }];
+    
+    [_collectionView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(weakSelf.view);
+        make.top.equalTo(_yayaNewSchedule.mas_bottom).offset(5);
+    }];
+}
+
+#pragma mark --- UICollectionViewDelegate ---
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 13;
+}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
+        return 20;
+}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    return 15;
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row %2) {
+       return CGSizeMake(self.view.width/2 -20, 230);
+    }else{
+        return CGSizeMake(self.view.width/2 -20, 200);
+    }
+    
+}
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(5, 10, 0, 10);
+}
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor cyanColor];
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:cell.frame];
+//    [imageView sd_setImageWithURL:self.urlArray[indexPath.row]];
+//    [cell addSubview:imageView];
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
 }
 @end
