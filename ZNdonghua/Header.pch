@@ -22,4 +22,5 @@
 #import "NetworkSingleton.h"
 #import <AFNetworking.h>
 #import <MBProgressHUD.h>
+#import <MJExtension.h>
 #endif /* Header_h */

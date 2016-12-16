@@ -20,6 +20,15 @@
 		CD0713EA1E028D770008985A /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713E91E028D770008985A /* ForgetPasswordViewController.m */; };
 		CD0713ED1E028D840008985A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713EC1E028D840008985A /* RegisterViewController.m */; };
 		CD0713F01E0293060008985A /* BaseUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713EF1E0293060008985A /* BaseUserViewController.m */; };
+		CD13B6BF1E03DB8500E18937 /* YaYaClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B6BE1E03DB8500E18937 /* YaYaClassifyViewController.m */; };
+		CD13B6C21E03DB9B00E18937 /* NewScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B6C11E03DB9B00E18937 /* NewScheduleViewController.m */; };
+		CD44B72A1E03BBB70025AC11 /* YaYaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B7291E03BBB70025AC11 /* YaYaViewController.m */; };
+		CD44B72D1E03BBC60025AC11 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B72C1E03BBC60025AC11 /* CommentViewController.m */; };
+		CD44B7301E03BBCF0025AC11 /* PartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B72F1E03BBCF0025AC11 /* PartViewController.m */; };
+		CD44B73A1E03C2230025AC11 /* DSCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B7331E03C2230025AC11 /* DSCarouselView.m */; };
+		CD44B73B1E03C2230025AC11 /* DSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B7351E03C2230025AC11 /* DSCollectionViewCell.m */; };
+		CD44B73C1E03C2230025AC11 /* DSCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD44B7361E03C2230025AC11 /* DSCollectionViewCell.xib */; };
+		CD44B7401E03C6F90025AC11 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B73F1E03C6F90025AC11 /* MainModel.m */; };
 		CD8B83C71E0133E800716930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B83C61E0133E800716930 /* main.m */; };
 		CD8B83CA1E0133E800716930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B83C91E0133E800716930 /* AppDelegate.m */; };
 		CD8B83CD1E0133E800716930 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B83CC1E0133E800716930 /* ViewController.m */; };
@@ -90,6 +99,23 @@
 		CD0713EC1E028D840008985A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		CD0713EE1E0293060008985A /* BaseUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUserViewController.h; sourceTree = "<group>"; };
 		CD0713EF1E0293060008985A /* BaseUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUserViewController.m; sourceTree = "<group>"; };
+		CD13B6BD1E03DB8500E18937 /* YaYaClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaYaClassifyViewController.h; sourceTree = "<group>"; };
+		CD13B6BE1E03DB8500E18937 /* YaYaClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaYaClassifyViewController.m; sourceTree = "<group>"; };
+		CD13B6C01E03DB9B00E18937 /* NewScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScheduleViewController.h; sourceTree = "<group>"; };
+		CD13B6C11E03DB9B00E18937 /* NewScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScheduleViewController.m; sourceTree = "<group>"; };
+		CD44B7281E03BBB70025AC11 /* YaYaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaYaViewController.h; sourceTree = "<group>"; };
+		CD44B7291E03BBB70025AC11 /* YaYaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaYaViewController.m; sourceTree = "<group>"; };
+		CD44B72B1E03BBC60025AC11 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		CD44B72C1E03BBC60025AC11 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		CD44B72E1E03BBCF0025AC11 /* PartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartViewController.h; sourceTree = "<group>"; };
+		CD44B72F1E03BBCF0025AC11 /* PartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartViewController.m; sourceTree = "<group>"; };
+		CD44B7321E03C2230025AC11 /* DSCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCarouselView.h; sourceTree = "<group>"; };
+		CD44B7331E03C2230025AC11 /* DSCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCarouselView.m; sourceTree = "<group>"; };
+		CD44B7341E03C2230025AC11 /* DSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCollectionViewCell.h; sourceTree = "<group>"; };
+		CD44B7351E03C2230025AC11 /* DSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCollectionViewCell.m; sourceTree = "<group>"; };
+		CD44B7361E03C2230025AC11 /* DSCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSCollectionViewCell.xib; sourceTree = "<group>"; };
+		CD44B73E1E03C6F90025AC11 /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		CD44B73F1E03C6F90025AC11 /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		CD8B83C21E0133E800716930 /* ZNdonghua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZNdonghua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8B83C61E0133E800716930 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD8B83C81E0133E800716930 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +211,120 @@
 				B53F8F3CF1F71CCC8D414BD3 /* libPods-ZNdonghua.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD13B6B81E03DAEE00E18937 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				CD0713D61E0245C10008985A /* ClearDishViewController.h */,
+				CD0713D71E0245C10008985A /* ClearDishViewController.m */,
+				CD0713D91E0245E30008985A /* NightModeViewController.h */,
+				CD0713DA1E0245E30008985A /* NightModeViewController.m */,
+				CD0713DC1E0245F10008985A /* UpdateViewController.h */,
+				CD0713DD1E0245F10008985A /* UpdateViewController.m */,
+				CD0713DF1E0246000008985A /* AboutBBViewController.h */,
+				CD0713E01E0246000008985A /* AboutBBViewController.m */,
+				CD0713E21E0246250008985A /* JoinUsViewController.h */,
+				CD0713E31E0246250008985A /* JoinUsViewController.m */,
+				CD0713E51E0246300008985A /* LoginViewController.h */,
+				CD0713E61E0246300008985A /* LoginViewController.m */,
+			);
+			name = Left;
+			sourceTree = "<group>";
+		};
+		CD13B6B91E03DB0600E18937 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD13B6BD1E03DB8500E18937 /* YaYaClassifyViewController.h */,
+				CD13B6BE1E03DB8500E18937 /* YaYaClassifyViewController.m */,
+				CD13B6C01E03DB9B00E18937 /* NewScheduleViewController.h */,
+				CD13B6C11E03DB9B00E18937 /* NewScheduleViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CD13B6BA1E03DB1000E18937 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Time;
+			sourceTree = "<group>";
+		};
+		CD13B6BB1E03DB1800E18937 /* Degenerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Degenerator;
+			sourceTree = "<group>";
+		};
+		CD13B6BC1E03DB2400E18937 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Radio;
+			sourceTree = "<group>";
+		};
+		CD44B7231E03BB210025AC11 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B842C1E013B3900716930 /* MainViewController.h */,
+				CD8B842D1E013B3900716930 /* MainViewController.m */,
+				CD44B7281E03BBB70025AC11 /* YaYaViewController.h */,
+				CD44B7291E03BBB70025AC11 /* YaYaViewController.m */,
+				CD44B72B1E03BBC60025AC11 /* CommentViewController.h */,
+				CD44B72C1E03BBC60025AC11 /* CommentViewController.m */,
+				CD44B72E1E03BBCF0025AC11 /* PartViewController.h */,
+				CD44B72F1E03BBCF0025AC11 /* PartViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CD44B7241E03BB4B0025AC11 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B842F1E013B7200716930 /* TimeViewController.h */,
+				CD8B84301E013B7200716930 /* TimeViewController.m */,
+			);
+			name = Time;
+			sourceTree = "<group>";
+		};
+		CD44B7251E03BB6A0025AC11 /* Degenerator */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B84321E013BBB00716930 /* DegeneratorViewController.h */,
+				CD8B84331E013BBB00716930 /* DegeneratorViewController.m */,
+			);
+			name = Degenerator;
+			sourceTree = "<group>";
+		};
+		CD44B7261E03BB850025AC11 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				CD8B84351E013BE800716930 /* RadioViewController.h */,
+				CD8B84361E013BE800716930 /* RadioViewController.m */,
+			);
+			name = Radio;
+			sourceTree = "<group>";
+		};
+		CD44B7271E03BB950025AC11 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				CD0713CD1E0226110008985A /* LeftViewController.h */,
+				CD0713CE1E0226110008985A /* LeftViewController.m */,
+			);
+			name = Left;
+			sourceTree = "<group>";
+		};
+		CD44B7311E03C2230025AC11 /* DSCarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				CD44B7321E03C2230025AC11 /* DSCarouselView.h */,
+				CD44B7331E03C2230025AC11 /* DSCarouselView.m */,
+				CD44B7341E03C2230025AC11 /* DSCollectionViewCell.h */,
+				CD44B7351E03C2230025AC11 /* DSCollectionViewCell.m */,
+				CD44B7361E03C2230025AC11 /* DSCollectionViewCell.xib */,
+			);
+			path = DSCarouselView;
 			sourceTree = "<group>";
 		};
 		CD8B83B91E0133E800716930 = {
@@ -324,6 +464,8 @@
 		CD8B83FE1E01366E00716930 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CD44B73E1E03C6F90025AC11 /* MainModel.h */,
+				CD44B73F1E03C6F90025AC11 /* MainModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -341,16 +483,11 @@
 		CD8B84001E01368200716930 /* first floor controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD8B842C1E013B3900716930 /* MainViewController.h */,
-				CD8B842D1E013B3900716930 /* MainViewController.m */,
-				CD8B842F1E013B7200716930 /* TimeViewController.h */,
-				CD8B84301E013B7200716930 /* TimeViewController.m */,
-				CD8B84321E013BBB00716930 /* DegeneratorViewController.h */,
-				CD8B84331E013BBB00716930 /* DegeneratorViewController.m */,
-				CD8B84351E013BE800716930 /* RadioViewController.h */,
-				CD8B84361E013BE800716930 /* RadioViewController.m */,
-				CD0713CD1E0226110008985A /* LeftViewController.h */,
-				CD0713CE1E0226110008985A /* LeftViewController.m */,
+				CD44B7231E03BB210025AC11 /* Main */,
+				CD44B7241E03BB4B0025AC11 /* Time */,
+				CD44B7251E03BB6A0025AC11 /* Degenerator */,
+				CD44B7261E03BB850025AC11 /* Radio */,
+				CD44B7271E03BB950025AC11 /* Left */,
 			);
 			name = "first floor controller";
 			sourceTree = "<group>";
@@ -358,18 +495,11 @@
 		CD8B84011E01369200716930 /* second floor controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD0713D61E0245C10008985A /* ClearDishViewController.h */,
-				CD0713D71E0245C10008985A /* ClearDishViewController.m */,
-				CD0713D91E0245E30008985A /* NightModeViewController.h */,
-				CD0713DA1E0245E30008985A /* NightModeViewController.m */,
-				CD0713DC1E0245F10008985A /* UpdateViewController.h */,
-				CD0713DD1E0245F10008985A /* UpdateViewController.m */,
-				CD0713DF1E0246000008985A /* AboutBBViewController.h */,
-				CD0713E01E0246000008985A /* AboutBBViewController.m */,
-				CD0713E21E0246250008985A /* JoinUsViewController.h */,
-				CD0713E31E0246250008985A /* JoinUsViewController.m */,
-				CD0713E51E0246300008985A /* LoginViewController.h */,
-				CD0713E61E0246300008985A /* LoginViewController.m */,
+				CD13B6B91E03DB0600E18937 /* Main */,
+				CD13B6BA1E03DB1000E18937 /* Time */,
+				CD13B6BB1E03DB1800E18937 /* Degenerator */,
+				CD13B6BC1E03DB2400E18937 /* Radio */,
+				CD13B6B81E03DAEE00E18937 /* Left */,
 			);
 			name = "second floor controller";
 			sourceTree = "<group>";
@@ -413,6 +543,7 @@
 		CD8B84061E01375F00716930 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				CD44B7311E03C2230025AC11 /* DSCarouselView */,
 				CD8B84091E01385900716930 /* Network */,
 			);
 			name = network;
@@ -569,6 +700,7 @@
 				CD8B83D51E0133E800716930 /* LaunchScreen.storyboard in Resources */,
 				CD8B83D21E0133E800716930 /* Assets.xcassets in Resources */,
 				CD8B83D01E0133E800716930 /* Main.storyboard in Resources */,
+				CD44B73C1E03C2230025AC11 /* DSCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,19 +775,25 @@
 			files = (
 				CD8B83CD1E0133E800716930 /* ViewController.m in Sources */,
 				CD0713CF1E0226110008985A /* LeftViewController.m in Sources */,
+				CD44B72A1E03BBB70025AC11 /* YaYaViewController.m in Sources */,
 				CD8B84411E01466000716930 /* BaseViewController.m in Sources */,
+				CD13B6BF1E03DB8500E18937 /* YaYaClassifyViewController.m in Sources */,
 				CD0713EA1E028D770008985A /* ForgetPasswordViewController.m in Sources */,
 				CD8B84251E01394D00716930 /* UILabel+LabelStyle.m in Sources */,
 				CD0713E71E0246300008985A /* LoginViewController.m in Sources */,
 				CD0713D51E023C840008985A /* leftHeaderView.m in Sources */,
 				CD8B84221E01394D00716930 /* UIButton+EnlargeTouchArea.m in Sources */,
+				CD44B7401E03C6F90025AC11 /* MainModel.m in Sources */,
 				CD8B84371E013BE800716930 /* RadioViewController.m in Sources */,
 				CD8B83CA1E0133E800716930 /* AppDelegate.m in Sources */,
 				CD8B84261E01394D00716930 /* UIView+frameExpand.m in Sources */,
 				CD8B84341E013BBB00716930 /* DegeneratorViewController.m in Sources */,
 				CD0713D81E0245C10008985A /* ClearDishViewController.m in Sources */,
 				CD8B84421E01466000716930 /* SearchBaseController.m in Sources */,
+				CD13B6C21E03DB9B00E18937 /* NewScheduleViewController.m in Sources */,
+				CD44B7301E03BBCF0025AC11 /* PartViewController.m in Sources */,
 				CD8B843A1E013D7700716930 /* NavigationVC.m in Sources */,
+				CD44B73A1E03C2230025AC11 /* DSCarouselView.m in Sources */,
 				CD8B840C1E01385900716930 /* NetworkSingleton.m in Sources */,
 				CD0713D21E0239340008985A /* leftTableViewCell.m in Sources */,
 				CD8B84231E01394D00716930 /* UIImage+ColorImage.m in Sources */,
@@ -669,7 +807,9 @@
 				CD0713ED1E028D840008985A /* RegisterViewController.m in Sources */,
 				CD8B842E1E013B3900716930 /* MainViewController.m in Sources */,
 				CD8B83C71E0133E800716930 /* main.m in Sources */,
+				CD44B73B1E03C2230025AC11 /* DSCollectionViewCell.m in Sources */,
 				CD8B84211E01394D00716930 /* UIButton+Count.m in Sources */,
+				CD44B72D1E03BBC60025AC11 /* CommentViewController.m in Sources */,
 				CD0713F01E0293060008985A /* BaseUserViewController.m in Sources */,
 				CD8B84311E013B7200716930 /* TimeViewController.m in Sources */,
 			);
