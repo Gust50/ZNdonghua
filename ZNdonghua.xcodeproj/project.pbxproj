@@ -22,6 +22,11 @@
 		CD0713F01E0293060008985A /* BaseUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0713EF1E0293060008985A /* BaseUserViewController.m */; };
 		CD13B6BF1E03DB8500E18937 /* YaYaClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B6BE1E03DB8500E18937 /* YaYaClassifyViewController.m */; };
 		CD13B6C21E03DB9B00E18937 /* NewScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD13B6C11E03DB9B00E18937 /* NewScheduleViewController.m */; };
+		CD4256B31E076FFA006EBFBC /* YYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4256B21E076FFA006EBFBC /* YYCollectionViewCell.m */; };
+		CD4256B61E078FD7006EBFBC /* YYHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4256B51E078FD7006EBFBC /* YYHeaderView.m */; };
+		CD4256BE1E07BE90006EBFBC /* ClassficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4256BD1E07BE90006EBFBC /* ClassficViewController.m */; };
+		CD4256C11E07BEA0006EBFBC /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4256C01E07BEA0006EBFBC /* TopicViewController.m */; };
+		CD4256C41E07CA32006EBFBC /* classficCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4256C31E07CA32006EBFBC /* classficCell.m */; };
 		CD44B72A1E03BBB70025AC11 /* YaYaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B7291E03BBB70025AC11 /* YaYaViewController.m */; };
 		CD44B72D1E03BBC60025AC11 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B72C1E03BBC60025AC11 /* CommentViewController.m */; };
 		CD44B7301E03BBCF0025AC11 /* PartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44B72F1E03BBCF0025AC11 /* PartViewController.m */; };
@@ -103,6 +108,16 @@
 		CD13B6BE1E03DB8500E18937 /* YaYaClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaYaClassifyViewController.m; sourceTree = "<group>"; };
 		CD13B6C01E03DB9B00E18937 /* NewScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScheduleViewController.h; sourceTree = "<group>"; };
 		CD13B6C11E03DB9B00E18937 /* NewScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScheduleViewController.m; sourceTree = "<group>"; };
+		CD4256B11E076FFA006EBFBC /* YYCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewCell.h; sourceTree = "<group>"; };
+		CD4256B21E076FFA006EBFBC /* YYCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCollectionViewCell.m; sourceTree = "<group>"; };
+		CD4256B41E078FD7006EBFBC /* YYHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHeaderView.h; sourceTree = "<group>"; };
+		CD4256B51E078FD7006EBFBC /* YYHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHeaderView.m; sourceTree = "<group>"; };
+		CD4256BC1E07BE90006EBFBC /* ClassficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassficViewController.h; sourceTree = "<group>"; };
+		CD4256BD1E07BE90006EBFBC /* ClassficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassficViewController.m; sourceTree = "<group>"; };
+		CD4256BF1E07BEA0006EBFBC /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicViewController.h; sourceTree = "<group>"; };
+		CD4256C01E07BEA0006EBFBC /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicViewController.m; sourceTree = "<group>"; };
+		CD4256C21E07CA32006EBFBC /* classficCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classficCell.h; sourceTree = "<group>"; };
+		CD4256C31E07CA32006EBFBC /* classficCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classficCell.m; sourceTree = "<group>"; };
 		CD44B7281E03BBB70025AC11 /* YaYaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YaYaViewController.h; sourceTree = "<group>"; };
 		CD44B7291E03BBB70025AC11 /* YaYaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YaYaViewController.m; sourceTree = "<group>"; };
 		CD44B72B1E03BBC60025AC11 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
@@ -262,6 +277,49 @@
 			children = (
 			);
 			name = Radio;
+			sourceTree = "<group>";
+		};
+		CD4256B71E07BE03006EBFBC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD4256BC1E07BE90006EBFBC /* ClassficViewController.h */,
+				CD4256BD1E07BE90006EBFBC /* ClassficViewController.m */,
+				CD4256BF1E07BEA0006EBFBC /* TopicViewController.h */,
+				CD4256C01E07BEA0006EBFBC /* TopicViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CD4256B81E07BE0C006EBFBC /* Time */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Time;
+			sourceTree = "<group>";
+		};
+		CD4256B91E07BE14006EBFBC /* Degenerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Degenerator;
+			sourceTree = "<group>";
+		};
+		CD4256BA1E07BE25006EBFBC /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Radio;
+			sourceTree = "<group>";
+		};
+		CD4256BB1E07BE30006EBFBC /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				CD0713E81E028D770008985A /* ForgetPasswordViewController.h */,
+				CD0713E91E028D770008985A /* ForgetPasswordViewController.m */,
+				CD0713EB1E028D840008985A /* RegisterViewController.h */,
+				CD0713EC1E028D840008985A /* RegisterViewController.m */,
+			);
+			name = Left;
 			sourceTree = "<group>";
 		};
 		CD44B7231E03BB210025AC11 /* Main */ = {
@@ -507,10 +565,11 @@
 		CD8B84021E01369D00716930 /* third floor controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD0713E81E028D770008985A /* ForgetPasswordViewController.h */,
-				CD0713E91E028D770008985A /* ForgetPasswordViewController.m */,
-				CD0713EB1E028D840008985A /* RegisterViewController.h */,
-				CD0713EC1E028D840008985A /* RegisterViewController.m */,
+				CD4256B71E07BE03006EBFBC /* Main */,
+				CD4256B81E07BE0C006EBFBC /* Time */,
+				CD4256B91E07BE14006EBFBC /* Degenerator */,
+				CD4256BA1E07BE25006EBFBC /* Radio */,
+				CD4256BB1E07BE30006EBFBC /* Left */,
 			);
 			name = "third floor controller";
 			sourceTree = "<group>";
@@ -518,6 +577,8 @@
 		CD8B84031E0136D500716930 /* third floor view */ = {
 			isa = PBXGroup;
 			children = (
+				CD4256C21E07CA32006EBFBC /* classficCell.h */,
+				CD4256C31E07CA32006EBFBC /* classficCell.m */,
 			);
 			name = "third floor view";
 			sourceTree = "<group>";
@@ -525,6 +586,10 @@
 		CD8B84041E0136E400716930 /* second floor view */ = {
 			isa = PBXGroup;
 			children = (
+				CD4256B11E076FFA006EBFBC /* YYCollectionViewCell.h */,
+				CD4256B21E076FFA006EBFBC /* YYCollectionViewCell.m */,
+				CD4256B41E078FD7006EBFBC /* YYHeaderView.h */,
+				CD4256B51E078FD7006EBFBC /* YYHeaderView.m */,
 			);
 			name = "second floor view";
 			sourceTree = "<group>";
@@ -781,6 +846,7 @@
 				CD0713EA1E028D770008985A /* ForgetPasswordViewController.m in Sources */,
 				CD8B84251E01394D00716930 /* UILabel+LabelStyle.m in Sources */,
 				CD0713E71E0246300008985A /* LoginViewController.m in Sources */,
+				CD4256C11E07BEA0006EBFBC /* TopicViewController.m in Sources */,
 				CD0713D51E023C840008985A /* leftHeaderView.m in Sources */,
 				CD8B84221E01394D00716930 /* UIButton+EnlargeTouchArea.m in Sources */,
 				CD44B7401E03C6F90025AC11 /* MainModel.m in Sources */,
@@ -789,9 +855,12 @@
 				CD8B84261E01394D00716930 /* UIView+frameExpand.m in Sources */,
 				CD8B84341E013BBB00716930 /* DegeneratorViewController.m in Sources */,
 				CD0713D81E0245C10008985A /* ClearDishViewController.m in Sources */,
+				CD4256C41E07CA32006EBFBC /* classficCell.m in Sources */,
 				CD8B84421E01466000716930 /* SearchBaseController.m in Sources */,
 				CD13B6C21E03DB9B00E18937 /* NewScheduleViewController.m in Sources */,
+				CD4256B31E076FFA006EBFBC /* YYCollectionViewCell.m in Sources */,
 				CD44B7301E03BBCF0025AC11 /* PartViewController.m in Sources */,
+				CD4256B61E078FD7006EBFBC /* YYHeaderView.m in Sources */,
 				CD8B843A1E013D7700716930 /* NavigationVC.m in Sources */,
 				CD44B73A1E03C2230025AC11 /* DSCarouselView.m in Sources */,
 				CD8B840C1E01385900716930 /* NetworkSingleton.m in Sources */,
@@ -803,6 +872,7 @@
 				CD0713E41E0246250008985A /* JoinUsViewController.m in Sources */,
 				CD0713DB1E0245E30008985A /* NightModeViewController.m in Sources */,
 				CD0713E11E0246000008985A /* AboutBBViewController.m in Sources */,
+				CD4256BE1E07BE90006EBFBC /* ClassficViewController.m in Sources */,
 				CD8B84271E01394D00716930 /* UIView+ViewController.m in Sources */,
 				CD0713ED1E028D840008985A /* RegisterViewController.m in Sources */,
 				CD8B842E1E013B3900716930 /* MainViewController.m in Sources */,

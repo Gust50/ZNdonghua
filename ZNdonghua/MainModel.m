@@ -17,3 +17,13 @@
 @implementation YaYaListModel
 
 @end
+
+@implementation YYModel
++(NSDictionary *)mj_objectClassInArray{
+    return @{@"animes":@"YYanimaes"};
+}
+@end
+
+@implementation YYanimaes
+
+@end

@@ -42,9 +42,8 @@
     return _yaya;
 }
 - (void)yayaAC{
-    _yaya.selected = !_yaya.selected;
-    _yaya.selected ? [_yaya setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal]:[_yaya setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    _yaya.selected ? [_yayaLine setHidden:NO] :[_yayaLine setHidden:YES];
+    [_yaya setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [_yayaLine setHidden:NO];
     [_comment setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _commentLine.hidden = YES;
     [_part setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -76,9 +75,8 @@
     return _comment;
 }
 - (void)commentAC{
-    _comment.selected = !_comment.selected;
-    _comment.selected ? [_comment setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal]:[_comment setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    _comment.selected ? [_commentLine setHidden:NO] :[_commentLine setHidden:YES];
+    [_comment setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [_commentLine setHidden:NO];
     [_yaya setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _yayaLine.hidden = YES;
     [_part setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -110,9 +108,8 @@
     return _part;
 }
 - (void)partAC{
-    _part.selected = !_part.selected;
-    _part.selected ? [_part setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal]:[_part setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    _part.selected ? [_partLine setHidden:NO] :[_partLine setHidden:YES];
+    [_part setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [_partLine setHidden:NO];
     [_yaya setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _yayaLine.hidden = YES;
     [_comment setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -178,11 +175,6 @@
 }
 - (void)initUI{
     [self.view addSubview:self.yayaVC.view];
-//    [self updateViewConstraints];
-}
-- (void)updateViewConstraints{
-    [super updateViewConstraints];
-//    WS(weakSelf);
 }
 
 #pragma mark --- YaYaViewControllerDelegate ---

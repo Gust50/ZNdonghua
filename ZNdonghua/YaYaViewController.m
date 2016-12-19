@@ -9,7 +9,8 @@
 #import "YaYaViewController.h"
 #import "DSCarouselView.h"
 #import "MainModel.h"
-
+#import "YYCollectionViewCell.h"
+#import "YYHeaderView.h"
 @interface YaYaViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property(nonatomic,strong)DSCarouselView *dscarouseView;
 @property(nonatomic,strong)MainModel *mainModel;
@@ -19,8 +20,11 @@
 @property(nonatomic,strong)UIButton *yayaNewSchedule;
 @property(nonatomic,strong)UICollectionView *collectionView;
 @property(nonatomic,strong)NSMutableArray *urlArray;
+@property(nonatomic,strong)NSMutableArray *dataMutableArray;
+@property(nonatomic,assign)NSInteger page;
 @end
 static NSString *const cellID = @"cellID";
+static NSString *const headerID = @"headerID";
 @implementation YaYaViewController
 
 - (MainModel *)mainModel{
@@ -40,6 +44,12 @@ static NSString *const cellID = @"cellID";
         _dataSource = [NSMutableArray array];
     }
     return _dataSource;
+}
+- (NSMutableArray *)dataMutableArray{
+    if (!_dataMutableArray) {
+        _dataMutableArray = [NSMutableArray array];
+    }
+    return _dataMutableArray;
 }
 - (UIButton *)yayaClassify{
     if (!_yayaClassify) {
@@ -81,6 +91,8 @@ static NSString *const cellID = @"cellID";
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadYaYaData)];
+        _collectionView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     }
     return _collectionView;
 }
@@ -93,6 +105,7 @@ static NSString *const cellID = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.page = 1;
     [self loadData];
     [self loadYaYaData];
     [self initUI];
@@ -115,19 +128,45 @@ static NSString *const cellID = @"cellID";
 }
 - (void)loadYaYaData{
     [[NetworkSingleton sharedManager] getDataResult:nil url:FP_TimeListURL successBlock:^(id responseBody) {
-        NSLog(@"番组分类数据%@",responseBody);
+        NSArray *array = [YYModel mj_objectArrayWithKeyValuesArray:responseBody];
+        for (YYModel *model in array) {
+            for (YYanimaes *yyanimaes in model.animes) {
+                [self.dataMutableArray addObject:yyanimaes];
+            }
+            [self.collectionView reloadData];
+        }
     } failureBlock:^(NSString *error) {
         
     }];
-    
-    
+}
+
+- (void)loadMoreData{
+    self.page++;
+    NSString *url = [NSString stringWithFormat:@"http://pudding.cc/api/v1/onair_anime?offset=0&limit=%ld&apiKey=yuki_android&deviceKey=00000000-6d05-eb1d-eaf5-22e24b989627&version=2.8.0&brand=htc&model=HTC+M8t&osv=5.0.2&os=Android&cpuArch=armv7l&timestamp=1451111921&channelId=AutoUpdate&auth1=6a5cf8a81d0281937224510507248319",self.page*20];
+    [[NetworkSingleton sharedManager] getDataResult:nil url:url successBlock:^(id responseBody) {
+        [self.dataMutableArray removeAllObjects];
+        NSArray *array = [YYModel mj_objectArrayWithKeyValuesArray:responseBody];
+        for (YYModel *model in array) {
+            for (YYanimaes *yyanimaes in model.animes) {
+                [self.dataMutableArray addObject:yyanimaes];
+            }
+            [self.collectionView reloadData];
+        }
+    } failureBlock:^(NSString *error) {
+        
+    }];
+    [self performSelector:@selector(endFooterFreshing) withObject:nil afterDelay:0.5];
+}
+- (void)endFooterFreshing{
+    [self.collectionView.mj_footer endRefreshing];
 }
 - (void)initUI{
     [self.view addSubview:self.yayaClassify];
     [self.view addSubview:self.yayaNewSchedule];
     [self.view addSubview:self.collectionView];
     [self updateViewConstraints];
-    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellID];
+    [_collectionView registerClass:[YYCollectionViewCell class] forCellWithReuseIdentifier:cellID];
+    [_collectionView registerClass:[YYHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerID];
 }
 - (void)updateViewConstraints{
     [super updateViewConstraints];
@@ -160,7 +199,7 @@ static NSString *const cellID = @"cellID";
     return 1;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 13;
+    return self.dataMutableArray.count;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
         return 20;
@@ -182,15 +221,22 @@ static NSString *const cellID = @"cellID";
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor cyanColor];
-//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:cell.frame];
-//    [imageView sd_setImageWithURL:self.urlArray[indexPath.row]];
-//    [cell addSubview:imageView];
+    YYCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    cell.model = self.dataMutableArray[indexPath.row];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    return CGSizeMake(self.view.width, 30);
+}
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        YYHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerID forIndexPath:indexPath];
+
+        return header;
+    }    return nil;
 }
 @end

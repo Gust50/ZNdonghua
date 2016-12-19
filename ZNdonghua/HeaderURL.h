@@ -20,4 +20,7 @@
 // 新番时间表
 #define FP_TimeListURL @"http://pudding.cc/api/v1/timetable?apiKey=yuki_android&deviceKey=00000000-6d05-eb1d-eaf5-22e24b989627&version=2.7.6&brand=htc&model=HTC+M8t&osv=5.0.2&os=Android&cpuArch=armv7l&timestamp=1450323024&channelId=AutoUpdate&auth1=29ac3047b15b4237c40ec3b2e3cdda25&currentUserId=5668d3abe597fa74328b4579&auth2=2bd57602cb3361b3c46966f734d2b9f5"
 
+///分类
+#define ClassifyURL @"http://pudding.cc/api/v1/category?offset=0&limit=57&apiKey=yuki_android&deviceKey=ffffffff-e197-bb11-f974-fbf819a98d65&version=2.7.6&brand=Huawei&model=HUAWEI+P6-C00&osv=4.4.2&os=Android&cpuArch=armv7l&timestamp=1450317542&channelId=huawei&auth1=23b2743c575d79244aa4ab1b7c9aa28f&currentUserId=556201f4e497fa92288b49fc&auth2=ddd637c26805f1c36c9b29ae25d2111a"
+
 #endif /* HeaderURL_h */
