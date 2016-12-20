@@ -22,5 +22,6 @@
 
 ///分类
 #define ClassifyURL @"http://pudding.cc/api/v1/category?offset=0&limit=57&apiKey=yuki_android&deviceKey=ffffffff-e197-bb11-f974-fbf819a98d65&version=2.7.6&brand=Huawei&model=HUAWEI+P6-C00&osv=4.4.2&os=Android&cpuArch=armv7l&timestamp=1450317542&channelId=huawei&auth1=23b2743c575d79244aa4ab1b7c9aa28f&currentUserId=556201f4e497fa92288b49fc&auth2=ddd637c26805f1c36c9b29ae25d2111a"
-
+///专题
+#define SubjectURL @"http://pudding.cc/api/v1/album/recommended?itemTypes=0&itemCount=3&limit=60&offset=0&apiKey=yuki_android&deviceKey=ffffffff-e197-bb11-f974-fbf819a98d65&version=2.7.6&brand=Huawei&model=HUAWEI+P6-C00&osv=4.4.2&os=Android&cpuArch=armv7l&timestamp=1450317542&channelId=huawei&auth1=23b2743c575d79244aa4ab1b7c9aa28f&currentUserId=556201f4e497fa92288b49fc&auth2=ddd637c26805f1c36c9b29ae25d2111a"
 #endif /* HeaderURL_h */

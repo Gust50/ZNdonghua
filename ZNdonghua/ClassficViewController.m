@@ -55,13 +55,9 @@ static NSString *const cellID = @"cellID";
 - (void)loadData{
     NSString *url = ClassifyURL;
     [[NetworkSingleton sharedManager] getDataResult:nil url:url successBlock:^(id responseBody) {
-//        NSLog(@"解析分类数据%@",responseBody);
-        NSArray *array = [YYanimaes mj_keyValuesArrayWithObjectArray:responseBody];
-        for (YYanimaes *animaes in array) {
-//            NSLog(@"url:%@",animaes.image);
-            [self.dataSource addObject:animaes];
-            NSLog(@"数组%@",self.dataSource);
-            NSLog(@"name:%@",animaes.name);
+        NSArray *array = [YYanimaes mj_objectArrayWithKeyValuesArray:responseBody];
+        for (YYanimaes *model in array) {
+            [self.dataSource addObject:model];
         }
         [self.collectionView reloadData];
     } failureBlock:^(NSString *error) {
@@ -90,9 +86,7 @@ static NSString *const cellID = @"cellID";
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
    classficCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor cyanColor];
     cell.model = self.dataSource[indexPath.row];
-    
     return cell;
 }
 @end

@@ -58,6 +58,8 @@
 		CD8B843A1E013D7700716930 /* NavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B84381E013D7700716930 /* NavigationVC.m */; };
 		CD8B84411E01466000716930 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B843B1E01466000716930 /* BaseViewController.m */; };
 		CD8B84421E01466000716930 /* SearchBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B843D1E01466000716930 /* SearchBaseController.m */; };
+		CDF9C2311E08CC51001B54FF /* topHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF9C2301E08CC51001B54FF /* topHeaderView.m */; };
+		CDF9C2341E08D383001B54FF /* topicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF9C2331E08D383001B54FF /* topicCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,10 @@
 		CD8B843D1E01466000716930 /* SearchBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBaseController.m; sourceTree = "<group>"; };
 		CD8B843E1E01466000716930 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		CD8B84441E01499100716930 /* constans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constans.h; sourceTree = "<group>"; };
+		CDF9C22F1E08CC51001B54FF /* topHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topHeaderView.h; sourceTree = "<group>"; };
+		CDF9C2301E08CC51001B54FF /* topHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topHeaderView.m; sourceTree = "<group>"; };
+		CDF9C2321E08D383001B54FF /* topicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topicCell.h; sourceTree = "<group>"; };
+		CDF9C2331E08D383001B54FF /* topicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topicCell.m; sourceTree = "<group>"; };
 		EDD3DF72447F80A233E8FA0E /* Pods-ZNdonghua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZNdonghua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZNdonghua/Pods-ZNdonghua.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -579,6 +585,10 @@
 			children = (
 				CD4256C21E07CA32006EBFBC /* classficCell.h */,
 				CD4256C31E07CA32006EBFBC /* classficCell.m */,
+				CDF9C22F1E08CC51001B54FF /* topHeaderView.h */,
+				CDF9C2301E08CC51001B54FF /* topHeaderView.m */,
+				CDF9C2321E08D383001B54FF /* topicCell.h */,
+				CDF9C2331E08D383001B54FF /* topicCell.m */,
 			);
 			name = "third floor view";
 			sourceTree = "<group>";
@@ -859,9 +869,11 @@
 				CD8B84421E01466000716930 /* SearchBaseController.m in Sources */,
 				CD13B6C21E03DB9B00E18937 /* NewScheduleViewController.m in Sources */,
 				CD4256B31E076FFA006EBFBC /* YYCollectionViewCell.m in Sources */,
+				CDF9C2311E08CC51001B54FF /* topHeaderView.m in Sources */,
 				CD44B7301E03BBCF0025AC11 /* PartViewController.m in Sources */,
 				CD4256B61E078FD7006EBFBC /* YYHeaderView.m in Sources */,
 				CD8B843A1E013D7700716930 /* NavigationVC.m in Sources */,
+				CDF9C2341E08D383001B54FF /* topicCell.m in Sources */,
 				CD44B73A1E03C2230025AC11 /* DSCarouselView.m in Sources */,
 				CD8B840C1E01385900716930 /* NetworkSingleton.m in Sources */,
 				CD0713D21E0239340008985A /* leftTableViewCell.m in Sources */,
